@@ -24,8 +24,8 @@ Usage
  Example of output to output.txt
  ------------------------------------
  
-RewriteCond %{REQUEST_URI} ^/aboutus\.htm$
-RewriteCond %{QUERY_STRING} ^user=2$
-RewriteRule ^(.*)$ http://www.baseurl/about/tim/? [L,R=301]
-RewriteCond %{QUERY_STRING} ^user=3$
-RewriteRule ^(.*)$ http://www.baseurl/about/jane/? [L,R=301]
+	RewriteCond %{REQUEST_URI} ^/aboutus\.htm$
+	RewriteCond %{QUERY_STRING} ^user=2$
+	RewriteRule ^(.*)$ http://www.baseurl/about/tim/? [L,R=301]
+	RewriteCond %{QUERY_STRING} ^user=3$
+	RewriteRule ^(.*)$ http://www.baseurl/about/jane/? [L,R=301]
